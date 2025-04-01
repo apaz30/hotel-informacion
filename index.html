@@ -3,80 +3,91 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Información para Huéspedes">
   <title>Información para Huéspedes</title>
   
-  <!-- Google Fonts -->
+  <!-- Preconexión para fuentes externas -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  
+  <!-- Google Fonts con carga optimizada -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <!-- Font Awesome para los iconos -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <!-- Tu archivo CSS -->
+  
+  <!-- Font Awesome con carga optimizada -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Precarga del CSS -->
+  <link rel="preload" href="styles.css" as="style">
   <link rel="stylesheet" href="styles.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="wi.ico" type="image/x-icon">
 </head>
 <body>
   <header>
-    <img src="Logo_WGQ.png" alt="Logo Wyndham Garden Quito" class="logo">
+    <img src="./assets/images/Logo_WGQ.png" alt="Logo Wyndham Garden Quito" class="logo">
     <h1>Información para Huéspedes</h1>
   </header>
   
-  <nav>
-    <ul>
-      <li><a href="#periodicos">Periódicos</a></li>
-      <li><a href="#turismo">Turismo</a></li>
-      <li><a href="#eventos">Eventos</a></li>
-      <li><a href="#transporte">Transporte</a></li>
-      <li><a href="#conectividad">Conectividad</a></li>
+  <nav aria-label="Navegación principal">
+    <ul role="menu">
+      <li role="none"><a href="#periodicos" role="menuitem">Periódicos</a></li>
+      <li role="none"><a href="#turismo" role="menuitem">Turismo</a></li>
+      <li role="none"><a href="#eventos" role="menuitem">Eventos</a></li>
+      <li role="none"><a href="#transporte" role="menuitem">Transporte</a></li>
+      <li role="none"><a href="#conectividad" role="menuitem">Conectividad</a></li>
     </ul>
   </nav>
   
-  <main>
+  <main role="main">
     <div class="grid-container">
       
       <!-- Sección Periódicos -->
-      <section id="periodicos" class="card">
-        <h2>Periódicos</h2>
+      <section id="periodicos" class="card" aria-labelledby="periodicos-heading">
+        <h2 id="periodicos-heading">Periódicos</h2>
         <ul>
-          <li><a href="https://www.eluniverso.com/" target="_blank"><i class="fas fa-newspaper"></i> El Universo</a></li>
-          <li><a href="https://www.elcomercio.com/" target="_blank"><i class="fas fa-newspaper"></i> El Comercio</a></li>
-          <li><a href="https://www.eltiempo.com/" target="_blank"><i class="fas fa-newspaper"></i> El Tiempo</a></li>
-          <li><a href="https://www.nytimes.com/international/" target="_blank"><i class="fas fa-newspaper"></i> New York Times</a></li>
-          <li><a href="https://www.usatoday.com/" target="_blank"><i class="fas fa-newspaper"></i> USA Today</a></li>
+          <li><a href="https://www.eluniverso.com/" target="_blank" rel="noopener noreferrer"><i class="fas fa-newspaper" aria-hidden="true"></i> El Universo</a></li>
+          <li><a href="https://www.elcomercio.com/" target="_blank" rel="noopener noreferrer"><i class="fas fa-newspaper" aria-hidden="true"></i> El Comercio</a></li>
+          <li><a href="https://www.eltiempo.com/" target="_blank" rel="noopener noreferrer"><i class="fas fa-newspaper" aria-hidden="true"></i> El Tiempo</a></li>
+          <li><a href="https://www.nytimes.com/international/" target="_blank" rel="noopener noreferrer"><i class="fas fa-newspaper" aria-hidden="true"></i> New York Times</a></li>
+          <li><a href="https://www.usatoday.com/" target="_blank" rel="noopener noreferrer"><i class="fas fa-newspaper" aria-hidden="true"></i> USA Today</a></li>
         </ul>
       </section>
       
       <!-- Sección Turismo -->
-      <section id="turismo" class="card">
-        <h2>Turismo</h2>
+      <section id="turismo" class="card" aria-labelledby="turismo-heading">
+        <h2 id="turismo-heading">Turismo</h2>
         <ul>
-          <li><a href="https://www.quito-turismo.gob.ec/" target="_blank"><i class="fas fa-map-marked-alt"></i> Quito Turismo</a></li>
-          <li><a href="https://visitquito.ec/" target="_blank"><i class="fas fa-landmark"></i> Visita Quito</a></li>
-          <li><a href="https://www.google.com/maps/search/centros+de+salud+Quito/" target="_blank"><i class="fas fa-hospital"></i> Centros de Salud</a></li>
-          <li><a href="https://www.google.com/maps/search/embajadas+en+Quito/" target="_blank"><i class="fas fa-flag"></i> Embajadas</a></li>
-          <li><a href="https://visitaecuador.com/" target="_blank"><i class="fas fa-globe-americas"></i> Visita Ecuador</a></li>
+          <li><a href="https://www.quito-turismo.gob.ec/" target="_blank" rel="noopener noreferrer"><i class="fas fa-map-marked-alt" aria-hidden="true"></i> Quito Turismo</a></li>
+          <li><a href="https://visitquito.ec/" target="_blank" rel="noopener noreferrer"><i class="fas fa-landmark" aria-hidden="true"></i> Visita Quito</a></li>
+          <li><a href="https://www.google.com/maps/search/centros+de+salud+Quito/" target="_blank" rel="noopener noreferrer"><i class="fas fa-hospital" aria-hidden="true"></i> Centros de Salud</a></li>
+          <li><a href="https://www.google.com/maps/search/embajadas+en+Quito/" target="_blank" rel="noopener noreferrer"><i class="fas fa-flag" aria-hidden="true"></i> Embajadas</a></li>
+          <li><a href="https://visitaecuador.com/" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe-americas" aria-hidden="true"></i> Visita Ecuador</a></li>
         </ul>
       </section>
       
       <!-- Sección Eventos -->
-      <section id="eventos" class="card">
-        <h2>Eventos</h2>
+      <section id="eventos" class="card" aria-labelledby="eventos-heading">
+        <h2 id="eventos-heading">Eventos</h2>
         <ul>
-          <li><a href="https://cultura.quito.gob.ec/" target="_blank"><i class="fas fa-calendar-alt"></i> Quito Cultura</a></li>
-          <li><a href="https://www.ticketshow.com.ec/" target="_blank"><i class="fas fa-ticket-alt"></i> TicketShow</a></li>
+          <li><a href="https://cultura.quito.gob.ec/" target="_blank" rel="noopener noreferrer"><i class="fas fa-calendar-alt" aria-hidden="true"></i> Quito Cultura</a></li>
+          <li><a href="https://www.ticketshow.com.ec/" target="_blank" rel="noopener noreferrer"><i class="fas fa-ticket-alt" aria-hidden="true"></i> TicketShow</a></li>
         </ul>
       </section>
       
       <!-- Sección Transporte -->
-      <section id="transporte" class="card">
-        <h2>Transporte</h2>
+      <section id="transporte" class="card" aria-labelledby="transporte-heading">
+        <h2 id="transporte-heading">Transporte</h2>
         <ul>
-          <li><a href="https://www.aeropuertoquito.aero/" target="_blank"><i class="fas fa-plane"></i> Aeropuerto</a></li>
-          <li><a href="https://www.uber.com/ec/es/" target="_blank"><i class="fas fa-car"></i> Uber</a></li>
-          <li><a href="https://www.google.com/maps/d/u/0/viewer?mid=1pOk_IZM0PEAZ1oF83f4A3dqOhY3MN-oX&femb=1&ll=-0.23275202033520948%2C-78.52080567049087&z=13" target="_blank"><i class="fas fa-bus"></i> Metro de Quito</a></li>
+          <li><a href="https://www.aeropuertoquito.aero/" target="_blank" rel="noopener noreferrer"><i class="fas fa-plane" aria-hidden="true"></i> Aeropuerto</a></li>
+          <li><a href="https://www.uber.com/ec/es/" target="_blank" rel="noopener noreferrer"><i class="fas fa-car" aria-hidden="true"></i> Uber</a></li>
+          <li><a href="https://www.google.com/maps/d/u/0/viewer?mid=1pOk_IZM0PEAZ1oF83f4A3dqOhY3MN-oX&femb=1&ll=-0.23275202033520948%2C-78.52080567049087&z=13" target="_blank" rel="noopener noreferrer"><i class="fas fa-bus" aria-hidden="true"></i> Metro de Quito</a></li>
         </ul>
       </section>
       
       <!-- Sección Conectividad -->
-      <section id="conectividad" class="card">
-        <h2>Conectividad</h2>
+      <section id="conectividad" class="card" aria-labelledby="conectividad-heading">
+        <h2 id="conectividad-heading">Conectividad</h2>
         <ul>
           <li><strong>WiFi:</strong> SSID: WyndhamGardenQuito</li>
           <li><strong>Contraseña:</strong> WyndhamVip@25</li>
@@ -88,9 +99,11 @@
     </div>
   </main>
   
-  <footer>
-    <p>© 2025 Wyndham Garden Quito</p>
+  <footer role="contentinfo">
+    <p>© 2025 Wyndham Garden Quito. Todos los derechos reservados.</p>
   </footer>
-  <script src="script.js"></script>
+  
+  <!-- Script con defer para mejor rendimiento -->
+  <script src="script.js" defer></script>
 </body>
 </html>
